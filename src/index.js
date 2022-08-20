@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDom from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ReactDom.render(<React.Fragment>
+    <h1>Netflix series list display</h1>
+    <p>The list of series are:</p>
+    <ol>
+        <li>The Vampire Diaries </li>
+        <li>Dark </li>
+        <li>Computer </li>
+        <li>Lets go </li>
+        <li>Love </li>
+    </ol>
+   
+</React.Fragment>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+,document.getElementById("root"));
+ 
